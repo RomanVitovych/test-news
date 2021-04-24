@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* *{
+    outline: 1px red solid;
+} */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v20-latin/roboto-v20-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/roboto-v20-latin/roboto-v20-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin/roboto-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin/roboto-v20-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin/roboto-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin/roboto-v20-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v20-latin/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-latin/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-latin/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-latin/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v20-latin/roboto-v20-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v20-latin/roboto-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-latin/roboto-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin/roboto-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-latin/roboto-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-latin/roboto-v20-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* ===================================================================================================== */
+
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/open-sans-v18-latin/open-sans-v18-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v18-latin/open-sans-v18-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v18-latin//open-sans-v18-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v18-latin/open-sans-v18-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* ====================================================================================================== */
+
+
+
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    cursor: url("../img/cursor.png"), pointer;
+}
+
+button {
+    display: block;
+    background: transparent;
+    cursor: url("../img/cursor.png"), pointer;
+}
+
+
+
+
+
+/* ===================================================== */
+
+/* ========== HEADER ========== */
+
+.header-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header-banner {
+    background-image: url('../images/plants-growing-from-coffee-beans.jpg');
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* ========== MAIN ========== */
+
+.main-content {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.quote {
+    min-height: 100px;
+    background: lavender;
+}
+
+.quote > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* ============== */
+
+.float-content {
+    font-size: 16px;
+    line-height: 1.6;
+    /* text-align: justify; */
+    margin: 20px 0;
+}
+
+.float-image {
+    width: 640px;
+    height: 480px;
+    float: right;
+    background-image: url('../images/Kabango-Coffee-Germination-Centre.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* =================== */
+
+.list {
+    margin: 40px 0;
+}
+
+.vertuo1{
+    background-image: url('../images/Vertuo-Next.-scaled-e1602495014577.jpg');
+    min-height: 480px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    margin: 20px 0;
+}
+.vertuo2{
+    background-image: url('../images/Review-of-the-Nespresso-Vertuo-Coffee-Maker-_.jpg');
+    min-height: 480px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    margin: 20px 0;
+}
+
+.list-content {
+    height: 300px;
+    overflow: scroll;
+}
+
+.list-content > p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+
+
+/* ============================================================= */
+
+.slider-wrap {
+    background: lavender;
+    padding-bottom: 100px;
+}
+
+.slide-image{
+    display: block;
+    min-height: 480px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 40px 0;
+}
+.image1{
+    background-image: 
+    url('../images/slider/6c848ef84eef56d2374690212098bee12762d2c0.jpg');
+}
+.image2{
+    background-image: 
+    url('../images/slider/934437-nestle\ \(2\).jpg');
+}
+.image3{
+    background-image: 
+    url('../images/slider/SBUX_Blonde_-_Whole_Bean_and_VIA1.jpg');
+}
+.image4{
+    background-image: 
+    url('../images/slider/starbucks-holiday-coffees-feed.jpg');
+}
+.image5{
+    background-image: 
+    url('../images/slider/старбакс\ 1.jpg');
+}
+
+/* ================================================================ */
+
+.footer-wrap{
+    background: lightblue;
+    min-height: 320px;
+}
