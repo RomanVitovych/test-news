@@ -1,1 +1,1 @@
-# test-purina
+- [new-post](https://romanvitovych.github.io/test-news/)
